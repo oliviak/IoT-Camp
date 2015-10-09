@@ -5,6 +5,6 @@ The goal of this camp is to shed some light into Internet of Things and what Mic
 
 # Agenda
 1. What is IoT? What does Microsoft do? Azure IoT Suite.
-2. [Lab] [Prerequisites](/RaspberryPi2/0Prerequisites.docx)
+2. [Lab] [Prerequisites](/RaspberryPi2)
 3. [Lab] Blinky on the Raspberry Pi 2
 4. [Lab] Blinky to the Cloud
