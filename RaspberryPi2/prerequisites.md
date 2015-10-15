@@ -8,6 +8,7 @@
 <a name="vs"></a>
 ##1. Download Windows 10 and Install Visual Studio 2015
 To setup your Windows 10 IoT Core development PC, you first need to install the following:
+
 1.	**Make sure you are running the public release of Windows 10 (version 10.0.10240) or better.** You can upgrade from [here](http://www.microsoft.com/en-us/software-download/windows10). If you are already running Windows 10, you can find your current build number by clicking the start button, typing “winver”, and hitting enter.
 2.	**Install Visual Studio 2015**
    1.	We recommend [Visual Studio Community Edition](http://go.microsoft.com/fwlink/?LinkID=534599), but Visual Studio Professional 2015 and Visual Studio Enterprise 2015 will work as well (available [here](http://go.microsoft.com/fwlink/?LinkID=534599)).
@@ -20,6 +21,7 @@ To setup your Windows 10 IoT Core development PC, you first need to install the 
 <a name="w10iot"></a>
 ##2. Download and Install the Windows 10 IoT Core tools
 The IoTCoreWatcher tool displays all the Windows 10 IoT Core devices on your network. Click [here](http://go.microsoft.com/fwlink/?LinkId=616847) to download it, and follow the instructions to install it. It should launch once it’s finished installing.
+
 1.	[Download](http://go.microsoft.com/fwlink/?LinkId=616847) the ISO for the Raspberry Pi 2 from the Microsoft Download Center.
 2.	**Save the ISO** to a local folder: ![](http://oliviak.blob.core.windows.net/blog/iot/4%201%20install%201.png)
 3.	Double click on the ISO (IoT Core RPi.iso). It will automatically mount itself as a virtual drive so you can access the contents. ![](http://oliviak.blob.core.windows.net/blog/iot/4%201%20install%202.png)
