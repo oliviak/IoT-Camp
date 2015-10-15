@@ -34,3 +34,5 @@ The IoTCoreWatcher tool displays all the Windows 10 IoT Core devices on your net
 1.	Download [GitHub Desktop for Windows](https://desktop.github.com/).
 2.	Set up an account on [GitHub](https://github.com/).
 3.	Sign into GitHub Desktop with your GitHub account.
+
+[Word-Document](0Prerequisites.docx)
