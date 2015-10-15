@@ -23,7 +23,8 @@ To setup your Windows 10 IoT Core development PC, you first need to install the 
 The IoTCoreWatcher tool displays all the Windows 10 IoT Core devices on your network. Click [here](http://go.microsoft.com/fwlink/?LinkId=616847) to download it, and follow the instructions to install it. It should launch once it’s finished installing.
 
 1.	[Download](http://go.microsoft.com/fwlink/?LinkId=616847) the ISO for the Raspberry Pi 2 from the Microsoft Download Center.
-2.	**Save the ISO** to a local folder: ![](http://oliviak.blob.core.windows.net/blog/iot/4%201%20install%201.png)
+2.	**Save the ISO** to a local folder:
+    ![](http://oliviak.blob.core.windows.net/blog/iot/4%201%20install%201.png)
 3.	Double click on the ISO (IoT Core RPi.iso). It will automatically mount itself as a virtual drive so you can access the contents. ![](http://oliviak.blob.core.windows.net/blog/iot/4%201%20install%202.png)
 4.	Install **Windows_10_IoT_Core_RPi2.msi**. When installation is complete, flash.ffu will be located at **C:\Program Files (x86)\Microsoft IoT\FFU\RaspberryPi2** ![](http://oliviak.blob.core.windows.net/blog/iot/4%201%20install%203.png)
 5.	Eject the Virtual CD when done
