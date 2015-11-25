@@ -1,0 +1,1 @@
+C:\Users\oliviak\Documents\GitHub\IoT-Camp\RaspberryPi2\code-samples\Blinky\CS\Blinky.csproj;arm
