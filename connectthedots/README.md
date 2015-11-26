@@ -7,11 +7,6 @@ This is the version using Windows 10 IoT Core on a Raspberry Pi 2. It requires a
 
 [View lab here](WindowsIoTCorePi2FezHat)
 
-##RaspbianFezHat
-This is the version using Raspbian and Mono/C# for development using a PC and a Raspberry Pi 2. It does not reuqire Windows 10, but currently does rely on Visual Studio for development. Products and services demonstrated include Raspberry Pi Raspbian Linux, Event Hubs, Stream Analytics, Azure Web Apps, Power BI, and more.
-
-[View lab here](RaspbianFezHat)
-
 ##Hardware
 
 In all labs above, the hardware used is a Raspberry Pi 2 and a GHI FEZ HAT. See individual labs for more information.
