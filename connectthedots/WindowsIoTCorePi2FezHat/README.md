@@ -16,10 +16,9 @@ This lab includes the following tasks:
 	1. [Software](#Task11)
 	2. [Devices](#Task12)
 	3. [Azure Account](#Task13)
-2. [Read Sensor Data / Creating a Universal App](#Task2)
-<!--	1. [Lab 2a: Read FEZ HAT sensors](#Task21)-->
-3. [Sensor Data to the Cloud / Send telemetry data to Azure Event Hub](#Task22)
-4. [Listen to the Cloud / Consuming the Event Hub data](#Task3)
+2. [Read Sensor Data: Create a Universal App](#Task2)
+3. [Sensor Data to the Cloud: Send telemetry data to Azure Event Hub](#Task22)
+4. [Listen to the Cloud: Consume the Event Hub data](#Task3)
 	1. [Creating a console application to read the Azure Event Hub](#Task31)
 	2. [Using Power BI](#Task32)
 	3. [(Optional) Consuming the Event Hub data from a Website](#Task33)
@@ -41,7 +40,7 @@ To setup your Windows 10 IoT Core development PC, you first need to install the 
 
 	You can validate your Visual Studio installation by selecting _Help > About Microsoft Visual Studio_. The required version of **Visual Studio** is 14.0.23107.0 D14Rel. The required version of **Visual Studio Tools for Universal Windows Apps** is 14.0.23121.00 D14OOB.
 
-- Windows IoT Core Project Templates. You can download them from [here](https://visualstudiogallery.msdn.microsoft.com/06507e74-41cf-47b2-b7fe-8a2624202d36). Alternatively, the templates can be found by searching for Windows IoT Core Project Templates in the [Visual Studio Gallery](https://visualstudiogallery.msdn.microsoft.com/) or directly from Visual Studio in the Extension and Updates dialog (Tools > Extensions and Updates > Online). 
+- Windows IoT Core Project Templates. You can download them from [here](https://visualstudiogallery.msdn.microsoft.com/55b357e1-a533-43ad-82a5-a88ac4b01dec). Alternatively, the templates can be found by searching for Windows IoT Core Project Templates in the [Visual Studio Gallery](https://visualstudiogallery.msdn.microsoft.com/) or directly from Visual Studio in the Extension and Updates dialog (Tools > Extensions and Updates > Online). 
 
 - Make sure you’ve **enabled developer mode** in Windows 10 by following [these instructions](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx).
 
@@ -53,7 +52,7 @@ For this project, you will need the following:
 - [Raspberry Pi 2 Model B](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/) with power supply
 - [GHI FEZ HAT](https://www.ghielectronics.com/catalog/product/500)
 - Your PC running Windows 10, RTM build or later
-- An Ethernet port on the PC, or an auto-crossover USB->Ethernet adapter like the [Belkin F4U047](http://www.amazon.com/Belkin-USB-Ethernet-Adapter-F4U047bt/dp/B00E9655LU/ref=sr_1_2).
+<!--- An Ethernet port on the PC, or an auto-crossover USB->Ethernet adapter like the [Belkin F4U047](http://www.amazon.com/Belkin-USB-Ethernet-Adapter-F4U047bt/dp/B00E9655LU/ref=sr_1_2).-->
 - Standard Ethernet cable
 - A good 16GB or 32GB Class 10 SD card. We recommend Samsung or Sandisk. Other cards will usually work, but tend to die more quickly.
 
@@ -119,7 +118,7 @@ You can also rename the device by using the web server, but certain functions ar
 
 ####Using WiFi on your Device ####
 
-1. To configure your device, run the **Windows 10 IoT Core Watcher** utility in your development PC and open the [web-based management](https://ms-iot.github.io/content/en-US/win10/tools/Webb.htm) application by right-clicking the detected device and selecting **Web Browser Here**.
+<!--1. To configure your device, run the **Windows 10 IoT Core Watcher** utility in your development PC and open the [web-based management](https://ms-iot.github.io/content/en-US/win10/tools/Webb.htm) application by right-clicking the detected device and selecting **Web Browser Here**.
 
 	![windows-iot-core-watcher-open-browser](Images/windows-iot-core-watcher-open-browser.png?raw=true)
 	
@@ -128,11 +127,15 @@ You can also rename the device by using the web server, but certain functions ar
 	2. Click **Networking** in the left-hand pane.
 	3. Under **Available networks**, select network you would like to connect to and supply the connection credentials. Click **Connect** to initiate the connection.
 
-	![networking-wifi-adapters](Images/networking-wifi-adapters.png?raw=true)
+	![networking-wifi-adapters](Images/networking-wifi-adapters.png?raw=true)-->
 	
 	
-	> **Note:** You can find more info in [Using WiFi on your Windows 10 IoT Core device](https://ms-iot.github.io/content/en-US/win10/SetupWiFi.htm).
+	> **Note:** Information can be found in [Using WiFi on your Windows 10 IoT Core device](https://ms-iot.github.io/content/en-US/win10/SetupWiFi.htm).
 	
+####Others ####
+
+- [Windows 10 IoT Core Command Line Utils](http://ms-iot.github.io/content/en-US/win10/tools/CommandLineUtils.htm)
+
 <a name="Task13" />
 ###Setting up your Azure Account###
 You will need a Microsoft Azure subscription ([free trial subscription] (http://azure.microsoft.com/en-us/pricing/free-trial/) is sufficient)
@@ -187,7 +190,7 @@ To create a Stream Analytics Job, perform the following steps.
 	_Managing Access Keys_
 
 <a name="Task2" />
-##Lab 2: Read Sensor Data / Creating a Universal App##
+##Lab 2: Read Sensor Data - Create a Universal App##
 Now that the device is configured, you will see how to create an application to read the value of the FEZ HAT sensors, and then send those values to an Azure Event Hub.
 
 <!--<a name="Task21" />-->
@@ -284,7 +287,7 @@ In order to get the information out of the hat sensors, you will take advantage 
 	````
 
 <a name="Task22" />
-##Lab 3: Sensor Data to the Cloud: Send telemetry data to Azure Event Hub###
+##Lab 3: Sensor Data to the Cloud - Send telemetry data to Azure Event Hub###
 
 Now that you know how to read the FEZ HAT sensors, you will send that information to an Azure Event Hub. To do that, you will use an existing [ConnectTheDots](https://github.com/Azure/connectthedots "Connect the Dots website") example which shows how to connect a Windows 10 IoT core device to Azure and send sensor information.
 
@@ -585,7 +588,7 @@ Now that you know how to read the FEZ HAT sensors, you will send that informatio
 	_Universal app UI_
 	
 <a name="Task3" />
-##Lab 4: Listen to the Cloud: Consuming the Event Hub data##
+##Lab 4: Listen to the Cloud - Consume the Event Hub data##
 In the following sections you will see different ways of consuming the sensor data that is being uploaded to the Azure Event Hub. You will use a simple Console App, a Website, and Power BI to consume this data and to generate meaningful information.
 
 <a name="Task31" />
@@ -973,9 +976,11 @@ Once the job starts it creates the Power BI datasource associated with the given
 	_Final Power BI Dashboard_
 
 <a name="Task33" />
-###Lab 4c: Consuming the Event Hub data from a Website###
+###Lab 4c: (Optional) Consuming the Event Hub data from a Website###
 	
-1. Open the Website project _ConnectTheDotsWebSite.sln_ located in the folder **connectthedots\WindowsIoTCorePi2FezHat\Code\WebSite**. <!--[here](https://github.com/southworkscom/connectthedots/tree/master/Azure/WebSite).-->
+<!--here https://github.com/southworkscom/connectthedots/tree/master/Azure/WebSite.-->
+
+1. Open the Website project _ConnectTheDotsWebSite.sln_ located in the folder **connectthedots\WindowsIoTCorePi2FezHat\Code\WebSite**.
 2. Browse to the folder **connectthedots\WindowsIoTCorePi2FezHat\Assets** and copy the _Web.config_ file inside the **ConnectTheDotsWebSite** folder of the Website.
 
 	![Copying the web config to the website solution](Images/copying-the-web-config-to-the-website-solutio.png?raw=true)
