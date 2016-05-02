@@ -34,7 +34,7 @@ The following sections are intended to setup your environment to be able to crea
 
 <a name="Task11" />
 ### Lab 1a & 1b: Setting up your Software and Devices
-(Already done in the IoT Camp)
+(Already done prior to the IoT Camp)
 See [Setting up your Software and Devices](1-Setup.md)
 
 <a name="Task13" />
