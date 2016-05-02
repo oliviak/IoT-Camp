@@ -117,16 +117,7 @@ Now that the device is configured, you will see how to create an application to 
 ### Read FEZ HAT sensors
 In order to get the information out of the hat sensors, you will take advantage of the [Developers' Guide](https://www.ghielectronics.com/docs/329/fez-hat-developers-guide "GHI Electronics FEZ HAT Developer's Guide") that [GHI Electronics](https://www.ghielectronics.com/ "GHI Electronics")  published.
 
-1. Download the [zipped repository](https://bitbucket.org/ghi_elect/windows-iot/get/183b64180b7c.zip "Download FEZ HAT Developers' Guide repository")
-
-1. Unblock the .zip file before extracting it. Unblocking the .zip file will keep Visual Studio from prompting you about "Trustworthy Sources". To Unblock the .zip file:
-
-	- Right click on the downloaded .zip file
-	- Select "**Properties**" from the popup menu. 
-	- In the "**Properties**" window, on the "**General**" tab, turn on the checkbox labeled "**Unblock**"
-	- Click "**OK**"
-
-1. Extract the files in your file system and locate the _GHIElectronics.UAP.sln_ solution file (You must have **Visual Studio** installed in order to open the solution).
+1. Navigate to the folder **Code\GHIElectronics** and open the _GHIElectronics.UAP.sln_ solution file (You must have **Visual Studio** installed in order to open the solution).
 
 2. After opening the solution you will see several projects. The _Developers's Guide_ comes with examples of many of the shields provided by the company. Right-click the one named _GHIElectronics.UAP.Examples.FEZHAT_, and select **Set as Startup Project**.
 
