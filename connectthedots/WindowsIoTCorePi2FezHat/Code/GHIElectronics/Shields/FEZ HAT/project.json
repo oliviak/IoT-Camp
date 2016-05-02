@@ -1,6 +1,5 @@
 ﻿{
   "dependencies": {
-    "GHIElectronics.UWP.Shields.FEZHAT": "0.0.8",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0"
   },
   "frameworks": {
