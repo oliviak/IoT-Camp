@@ -1,9 +1,14 @@
-<a name="Task1" />
-## Setup
+# Lab 1: Setup your software and devices
+(Already done prior to the IoT Camp)
 The following sections are intended to setup your environment to be able to create and run your solutions with Windows 10 IoT Core.
 
+
+1. [Setting up your Software](#Task11)
+2. [Setting up your Devices](#Task12)
+
+
 <a name="Task11" />
-### Setting up your Software
+## Setting up your Software
 To setup your Windows 10 IoT Core development PC, you first need to install the following:
 
 - Windows 10 (build 10240) or better
@@ -21,7 +26,7 @@ To setup your Windows 10 IoT Core development PC, you first need to install the 
 - To register your devices in the Azure IoT Hub Service and to monitor the communication between them you need to install the [Azure Device Explorer](https://github.com/Azure/azure-iot-sdks/releases/download/2016-04-22/SetupDeviceExplorer.msi).
 
 <a name="Task12" />
-### Setting up your Devices
+## Setting up your Devices
 
 For this project, you will need the following:
 
@@ -87,7 +92,7 @@ To setup your devices perform the following steps:
 
 	![Connected to the Raspberry using PS](Images/connected-to-the-raspberry-using-ps.png?raw=true)
 
-#### Renaming your Device and Checking the Date and Time
+### Renaming your Device and Checking the Date and Time
 
 1. To change the _computer name_, use the **setcomputername** utility. In PowerShell, type the following command.
 
@@ -129,7 +134,7 @@ To setup your devices perform the following steps:
 
 You can also rename the device and set the time zone by using the web server, but certain functions, like actually changing the date and time, are currently available only through PowerShell. Now that you understand how to connect through PowerShell, we'll use the web server to set up WiFi.
 
-#### Using WiFi on your Device
+### Using WiFi on your Device
 
 1. To configure your device, run the **Windows 10 IoT Core Watcher** utility in your development PC and open the [web-based management](http://ms-iot.github.io/content/en-US/win10/tools/DevicePortal.htm) application by right-clicking the detected device and selecting **Web Browser Here**.  To launch the "Windows 10 IoT Core Watcher" utility:
 
