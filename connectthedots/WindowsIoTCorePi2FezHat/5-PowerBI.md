@@ -3,18 +3,19 @@
 One of the most interesting ways to use the information received from the connected device/s is to get near real-time analysis using the **Microsoft Power BI** tool. In this section you will see how to configure this tool to get an online dashboard showing summarized information about the different sensors.
 
 It's structured as follows:
+
 1. [Setting up a Power BI account](#Task51)
-    1. [Create a Service Bus Consumer Group](#Task511)
-2. [Setting the data source](#Task52)
+2. [Create a Consumer Group in IoT Hub](#Task511)
+3. [Setting the data source for Visualisation: Stream Analytics Job](#Task52)
     1. [Stream Analytics Input Setup](#Task521)
     2. [Stream Analytics Output Setup](#Task522)
     3. [Stream Analytics Query configuration](#Task523)
     4. [Starting the Stream Analytics Job](#Task524)
-3. [Setting up the Power BI dashboard](#Task53)
+4. [Setting up the Power BI dashboard](#Task53)
 
 
 <a name="Task51" />
-#### Setting up a Power BI account
+### 1. Setting up a Power BI account
 If you don't have a Power BI account already, you will need to create one (a free account is enough to complete this lab). If you already have an account set you can skip this step.
 
 1. Go to the [Power BI website](https://powerbi.microsoft.com/) and follow the sign-up process.
@@ -32,7 +33,7 @@ If you don't have a Power BI account already, you will need to create one (a fre
 Now that your account is set, you are ready to set up the data source that will feed the Power BI dashboard.
 
 <a name="Task511" />
-##### Create a Service Bus Consumer Group
+### 2. Create a Consumer Group in IoT Hub
 In order to allow several consumer applications to read data from the IoT Hub independently at their own pace a Consumer Group must be configured for each one. If all of the consumer applications (the Device Explorer, Stream Analytics / Power BI, the Web site you will configure in the next section) read the data from the default consumer group, one application will block the others.
 
 To create a new Consumer Group for the IoT Hub that will be used by the Stream Analytics job you are about to configure, follow these steps:
@@ -45,11 +46,11 @@ To create a new Consumer Group for the IoT Hub that will be used by the Stream A
 ![Create Consumer Group](Images/create-consumer-group.png?raw=true)
 
 <a name="Task52" />
-#### Setting the data source
+### 3. Setting the data source for Visualisation: Stream Analytics Job
 In order to feed the Power BI reports with the information gathered by the hats and to get that information in near real-time, **Power BI** supports **Azure Stream Analytics** outputs as data source. The following section will show how to configure the Stream Analytics job created in the Setup section to take the input from the IoT Hub and push that summarized information to Power BI.
 
 <a name="Task521" />
-##### Stream Analytics Input Setup
+#### 3.1. Stream Analytics Input Setup
 Before the information can be delivered to **Power BI**, it must be processed by a **Stream Analytics Job**. To do so, an input for that job must be provided. As the Raspberry devices are sending information to an IoT Hub, it will be set as the input for the job.
 
 1. Go to the classic [Azure management portal](Stream Analytics Input ) (https://manage.windowsazure.com) and select the **Stream Analytics** service. There you will find the Stream Analytics job created during the _Azure services setup_. Click on the job to enter the Stream Analytics configuration screen.
@@ -75,7 +76,7 @@ Before the information can be delivered to **Power BI**, it must be processed by
 4. Click **Next**, and then **Complete** (leave the Serialization settings as they are).
 
 <a name="Task522" />
-##### Stream Analytics Output Setup
+#### 3.2. Stream Analytics Output Setup
 The output of the Stream Analytics job will be Power BI.
 
 1. To set up the output, go to the Stream Analytics Job's **OUTPUTS** tab, and click the **ADD AN OUTPUT** link.
@@ -106,7 +107,7 @@ The output of the Stream Analytics job will be Power BI.
 6. Click the checkmark button to create the output.
 
 <a name="Task523" />
-##### Stream Analytics Query configuration
+#### 3.3. Stream Analytics Query configuration
 Now that the job's inputs and outputs are already configured, the Stream Analytics Job needs to know how to transform the input data into the output data source. To do so, you will create a new Query.
 
 1. Go to the Stream Analytics Job **QUERY** tab and replace the query with the following statement:
@@ -134,13 +135,13 @@ Now that the job's inputs and outputs are already configured, the Stream Analyti
 2. Click on the **SAVE** button and **YES** in the confirmation dialog.
 
 <a name="Task524" />
-##### Starting the Stream Analytics Job
+#### 3.4. Starting the Stream Analytics Job
 Now that the job is configured, the **START** button is enabled. Click the button to start the job and then select the **JOB START TIME** option in the **START OUTPUT** popup. After clicking **OK** the job will be started.
 
 Once the job starts it creates the Power BI datasource associated with the given subscription.
 
 <a name="Task53" />
-#### Setting up the Power BI dashboard
+### 4. Setting up the Power BI dashboard
 1. Now that the datasource is created, go back to your Power BI session, and go to **My Workspace** by clicking the **Power BI** link.
 
 	After some minutes of the job running you will see that the dataset that you configured as an output for the Job, is now displayed in the Power BI workspace Datasets section.

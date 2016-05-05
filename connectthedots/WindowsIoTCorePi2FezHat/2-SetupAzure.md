@@ -1,12 +1,13 @@
-# Lab 2: Setup your Azure account & services, and register your device
+# Lab 2: Setup Azure
 
 You will need a Microsoft Azure subscription ([free trial subscription] (http://azure.microsoft.com/en-us/pricing/free-trial/) is sufficient)
+
 1. [Create an IoT Hub](#Task21)
-2. [Create a Stream Analytics Job](#)
+2. [Create a Stream Analytics Job](#Task22)
 3. [Register your device](#Task23)
 
 <a name="Task21" />
-### Creating an IoT Hub
+## 1. Creating an IoT Hub
 
 1. Enter the Azure portal, by browsing to http://portal.azure.com
 2. Create a new IoT Hub. To do this, click **New** in the jumpbar, then click **Internet of Things**, then click **Azure IoT Hub**.
@@ -35,7 +36,7 @@ You will need a Microsoft Azure subscription ([free trial subscription] (http://
 
 
 <a name="Task22" />
-### Creating a Stream Analitycs Job
+## 2. Creating a Stream Analitycs Job
 
 To create a Stream Analytics Job, perform the following steps.
 
@@ -58,7 +59,7 @@ To create a Stream Analytics Job, perform the following steps.
 	_Managing Access Keys_
 
 <a name="Task23" />
-### Registering your device
+## 3. Registering your device
 You must register your device in order to be able to send and receive information from the Azure IoT Hub. This is done by registering a [Device Identity](https://azure.microsoft.com/en-us/documentation/articles/iot-hub-devguide/#device-identity-registry) in the IoT Hub.
 
 1. Open the Device Explorer app (downloard [here](https://github.com/Azure/azure-iot-sdks/releases/download/2016-04-22/SetupDeviceExplorer.msi)) (C:\Program Files (x86)\Microsoft\DeviceExplorer\DeviceExplorer.exe) and fill the **IoT Hub Connection String** field with the connection string of the IoT Hub you created in previous steps and click on **Update**.

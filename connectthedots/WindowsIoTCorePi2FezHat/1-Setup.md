@@ -1,5 +1,6 @@
 # Lab 1: Setup your software and devices
 (Already done prior to the IoT Camp)
+
 The following sections are intended to setup your environment to be able to create and run your solutions with Windows 10 IoT Core.
 
 
