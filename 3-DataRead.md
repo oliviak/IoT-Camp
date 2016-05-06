@@ -1,9 +1,9 @@
 # Lab 3: Read data from FEZ HAT sensors - Creating a Universal App
 Now that the device is configured, you will see how to create an application to read the value of the FEZ HAT sensors, and then send those values to an Azure IoT Hub.
 
-	![Lab 3 Overview](Images/3-HOL.png?raw=true)
+![Lab 3 Overview](Images/3-HOL.png?raw=true)
 
-	_Overview of Lab 3_
+_Overview of Lab 3_
 
 In order to get the information out of the hat sensors, you will take advantage of the [Developers' Guide](https://www.ghielectronics.com/docs/329/fez-hat-developers-guide "GHI Electronics FEZ HAT Developer's Guide") that [GHI Electronics](https://www.ghielectronics.com/ "GHI Electronics")  published.
 

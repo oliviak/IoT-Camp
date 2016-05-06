@@ -4,9 +4,9 @@ ConnectTheDots will help you get tiny devices connected to Microsoft Azure, and 
 
 > This lab is stand-alone, but is used at Microsoft to accompany a presentation about Azure, Windows 10 IoT Core, and our IoT services. If you wish to follow this on your own, you are encouraged to do so. If not, consider attending a Microsoft-led IoT lab in your area.
 
-	![fezhat-connected-to-raspberri-pi-2](Images/fezhat-connected-to-raspberri-pi-2.png?raw=true)
+![fezhat-connected-to-raspberri-pi-2](Images/fezhat-connected-to-raspberri-pi-2.png?raw=true)
 
-	_The FEZ hat connected to the Raspberry Pi 2 device_
+_The FEZ hat connected to the Raspberry Pi 2 device_
 
 
 
@@ -15,9 +15,9 @@ The JSON string is sent to the IoT Hub in one of two ways: packaged into an AMQP
 
 > **Note:** Although AMQP is the recommended approach, at the time this lab was written that protocol was not supported by the [Azure IoT Core SDK](https://github.com/Azure/azure-iot-sdks) for UWP (Universal Windows Platform) applications. However, it is expected to be implemented in a short time, since it's currently under development.  
 
-	![Hands-on Lab Overview](Images/HOL.png?raw=true)
+![Hands-on Lab Overview](Images/HOL.png?raw=true)
 
-	_Overview of the Hands-on Labs_
+_Overview of the Hands-on Labs_
 
 
 This lab includes the following tasks:

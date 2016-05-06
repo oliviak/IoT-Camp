@@ -7,9 +7,9 @@ You have seen how to use the Device Explorer to peek the data being sent to the 
 <a name="Task52" />
 ## Lab 5b: Consuming the IoT Hub data from a Website
 
-	![Lab 5 Overview](Images/5b-HOL.png?raw=true)
+![Lab 5 Overview](Images/5b-HOL.png?raw=true)
 
-	_Overview Lab 5_
+_Overview Lab 5_
 
 
 1. Before starting you need to create Consumer Groups to avoid colliding with the Stream Analytics job, in the same way you did in the [Using Power BI section](Task3220). The website needs two different consumer groups:

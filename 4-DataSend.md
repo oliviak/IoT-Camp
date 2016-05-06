@@ -2,9 +2,9 @@
 
 Now that you know how to read the FEZ HAT sensors data, you will send that information to an Azure IoT Hub.
 
-	![Lab 4 Overview](Images/4-HOL.png?raw=true)
+![Lab 4 Overview](Images/4-HOL.png?raw=true)
 
-	_Overview of Lab 4_
+_Overview of Lab 4_
 
 
 To do that, you will use an existing project located in the **Code\WindowsIoTCorePi2FezHat\Begin** folder. This project is based on the [ConnectTheDots Raspberry Pi with Windows 10 IoT sample project](https://github.com/Azure/connectthedots/tree/master/Devices/DirectlyConnectedDevices/WindowsIoTCorePi2) but using the [Azure IoT SDK](https://github.com/Azure/azure-iot-sdks) to connect with Azure, instead of using an Event Hub.

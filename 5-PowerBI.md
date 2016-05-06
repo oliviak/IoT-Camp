@@ -2,9 +2,9 @@
 
 One of the most interesting ways to use the information received from the connected device/s is to get near real-time analysis using the **Microsoft Power BI** tool. In this section you will see how to configure this tool to get an online dashboard showing summarized information about the different sensors.
 
-	![Lab 5 (Power BI) Overview](Images/5a-HOL.png?raw=true)
+![Lab 5 (Power BI) Overview](Images/5a-HOL.png?raw=true)
 
-	_Overview Lab 5 (Power BI)_
+_Overview Lab 5 (Power BI)_
 
 
 It's structured as follows:
